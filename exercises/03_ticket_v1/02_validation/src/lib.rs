@@ -16,7 +16,7 @@ impl Ticket {
     // You'll have to use what you learned in the previous exercises,
     // as well as some `String` methods. Use the documentation of Rust's standard library
     // to find the most appropriate options -> https://doc.rust-lang.org/std/string/struct.String.html
-    fn new(title: String, description: String, status: String) -> Self {
+    fn new(title: String, description: String, status: String) -> Ticket {
         if !((status == "To-Do") || (status == "In Progress") || (status == "Done")) {
             panic!("Only `To-Do`, `In Progress`, and `Done` statuses are allowed");
         }
@@ -33,7 +33,7 @@ impl Ticket {
             panic!("Description cannot be longer than 500 characters");
         }
 
-        Self {
+        Ticket {
             title,
             description,
             status,
