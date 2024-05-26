@@ -24,13 +24,13 @@ impl Ticket {
         if title.len() == 0 {
             panic!("Title cannot be empty");
         } else if title.len() > 50 {
-            panic!("Title cannot be longer than 50 characters");
+            panic!("Title cannot be longer than 50 bytes");
         }
 
         if description.len() == 0 {
             panic!("Description cannot be empty");
         } else if description.len() > 500 {
-            panic!("Description cannot be longer than 500 characters");
+            panic!("Description cannot be longer than 500 bytes");
         }
 
         Ticket {
