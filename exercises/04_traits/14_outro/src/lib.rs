@@ -13,6 +13,29 @@ pub struct SaturatingU16 {
     value: u16,
 }
 
+// Conversions
+impl From<u16> for SaturatingU16 {
+    fn from(value: u16) -> Self {
+
+    }
+}
+impl From<&u16> for SaturatingU16 {
+    fn from(value: &u16) -> Self {
+        
+    }
+}
+impl From<u8> for SaturatingU16 {
+    fn from(value: u8) -> Self {
+        
+    }
+}
+impl From<&u8> for SaturatingU16 {
+    fn from(value: &u8) -> Self {
+
+    }
+}
+
+// Additions
 impl Add<SaturatingU16> for SaturatingU16 {
     type Output = SaturatingU16;
 
@@ -39,5 +62,17 @@ impl Add<&u16> for SaturatingU16 {
 
     fn add(self, other) -> SaturatingU16 {
 
+    }
+}
+
+// Comparisons
+impl PartialEq<SaturatingU16> for SaturatingU16 {
+    fn eq(&self, other: &SaturatingU16) -> bool {
+
+    }
+}
+impl PartialEq<u16> for SaturatingU16 {
+    fn eq(&self, other: &u16) -> bool {
+        
     }
 }
