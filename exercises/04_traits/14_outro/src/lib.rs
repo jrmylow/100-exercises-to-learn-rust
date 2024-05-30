@@ -8,3 +8,36 @@
 //   It should be possible to print its debug representation.
 //
 // Tests are located in the `tests` folder—pay attention to the visibility of your types and methods.
+#[derive(Copy, Clone, PartialEq, Debug)]
+pub struct SaturatingU16 {
+    value: u16,
+}
+
+impl Add<SaturatingU16> for SaturatingU16 {
+    type Output = SaturatingU16;
+
+    fn add(self, other) -> SaturatingU16 {
+
+    }
+}
+impl Add<&SaturatingU16> for SaturatingU16 {
+    type Output = SaturatingU16;
+
+    fn add(self, other) -> SaturatingU16 {
+
+    }
+}
+impl Add<u16> for SaturatingU16 {
+    type Output = SaturatingU16;
+
+    fn add(self, other) -> SaturatingU16 {
+
+    }
+}
+impl Add<&u16> for SaturatingU16 {
+    type Output = SaturatingU16;
+
+    fn add(self, other) -> SaturatingU16 {
+
+    }
+}
